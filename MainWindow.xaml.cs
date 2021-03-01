@@ -27,12 +27,11 @@ namespace GroupTest
 
         private void plus_Click(object sender, RoutedEventArgs e)
         {
-            double output = 0;
-            double number1 = Convert.ToInt32(input.Text);
+            double input1 = value1;
+            double input2 = value2;
 
-            output = output + number1;
-
-            results.Text = Convert.ToString(output);
+            calculatedvalue = input1 + input2
+            results.Text(calculatedvalue.ToString());
         }
     }
 }
