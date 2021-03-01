@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GroupTest"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="200">
+        Title="MainWindow" Height="500" Width="200">
     <GroupBox Header="Calculator" Margin="10">
         <StackPanel>
             <ScrollViewer Height="60">
@@ -25,6 +25,8 @@
                     <Button x:Name="squareRoot" Content="√" FontSize="24" MinWidth="50" Padding="10" Margin="10"/>
                 </StackPanel>
             <Button x:Name="refresh" Content="CE" FontSize="24"  Margin="10"/>
-        </StackPanel>
+            <Button x:Name="enter" Content="Enter" FontSize="24" Margin="10"/>
+
+    </StackPanel>
     </GroupBox>
 </Window>
