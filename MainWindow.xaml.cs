@@ -24,5 +24,10 @@ namespace GroupTest
         {
             InitializeComponent();
         }
+
+        private void refresh_Click(object sender, RoutedEventArgs e)
+        {
+            input.Text = "";
+        }
     }
 }
