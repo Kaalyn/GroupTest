@@ -20,6 +20,8 @@ namespace GroupTest
     /// </summary>
     public partial class MainWindow : Window
     {
+        double calculatedValue;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -27,11 +29,12 @@ namespace GroupTest
 
         private void plus_Click(object sender, RoutedEventArgs e)
         {
-            double input1 = value1;
-            double input2 = value2;
+            double input1 = Convert.ToInt32(value1.Text);
+            double input2 = Convert.ToInt32(value2.Text);
 
-            calculatedvalue = input1 + input2
-            results.Text(calculatedvalue.ToString());
+            calculatedValue = input1 + input2;
+
+            results.Text = calculatedValue.ToString();
         }
     }
 }
