@@ -1,0 +1,30 @@
+﻿<Window x:Class="GroupTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GroupTest"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="200">
+    <GroupBox Header="Calculator" Margin="10">
+        <StackPanel>
+            <ScrollViewer Height="60">
+                <TextBlock x:Name="results" TextAlignment="Right" Background="AliceBlue"/>
+            </ScrollViewer>
+            <TextBox x:Name="input" Text="0" Background="AliceBlue" TextAlignment="Right" FontSize="20"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button x:Name="plus" Content="+" FontSize="24"  MinWidth="50" Padding="10" Margin="10"/>
+                <Button x:Name="minus" Content="-" FontSize="24" MinWidth="50" Padding="10" Margin="10"/>
+            </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Button x:Name="multiply" Content="*" FontSize="24"  MinWidth="50" Padding="10" Margin="10"/>
+                    <Button x:Name="divide" Content="/" FontSize="24" MinWidth="50" Padding="10" Margin="10"/>
+                </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button x:Name="squared" Content="x²" FontSize="24"  MinWidth="50" Padding="10" Margin="10"/>
+                    <Button x:Name="squareRoot" Content="√" FontSize="24" MinWidth="50" Padding="10" Margin="10"/>
+                </StackPanel>
+            <Button x:Name="refresh" Content="CE" FontSize="24"  Margin="10"/>
+        </StackPanel>
+    </GroupBox>
+</Window>
