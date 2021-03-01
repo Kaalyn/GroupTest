@@ -13,7 +13,7 @@
             </ScrollViewer>
             <TextBox x:Name="input" Text="0" Background="AliceBlue" TextAlignment="Right" FontSize="20"/>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <Button x:Name="plus" Content="+" FontSize="24"  MinWidth="50" Padding="10" Margin="10"/>
+                <Button x:Name="plus" Content="+" FontSize="24"  MinWidth="50" Padding="10" Margin="10" Click="plus_Click"/>
                 <Button x:Name="minus" Content="-" FontSize="24" MinWidth="50" Padding="10" Margin="10"/>
             </StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">

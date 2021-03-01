@@ -24,5 +24,15 @@ namespace GroupTest
         {
             InitializeComponent();
         }
+
+        private void plus_Click(object sender, RoutedEventArgs e)
+        {
+            double output = 0;
+            double number1 = Convert.ToInt32(input.Text);
+
+            output = output + number1;
+
+            results.Text = Convert.ToString(output);
+        }
     }
 }
