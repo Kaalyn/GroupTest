@@ -20,9 +20,57 @@ namespace GroupTest
     /// </summary>
     public partial class MainWindow : Window
     {
+        double total;
+        char operation = '0';
+
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void plus_Click(object sender, RoutedEventArgs e)
+        {
+            // get number
+            // insert control condition
+            double.TryParse(input.Text, out double number);
+
+            if (operation != '0')
+            {
+                // put number + sign in textbox
+                results.Text = total + " " + ((Button)sender).Content + " " + number.ToString() + " =\n" + results.Text;
+            }
+
+            calculate(number, (Button)sender);
+
+            results.Text = total + results.Text;
+
+            input.Text = total.ToString();
+
+            operation = '+'; //plus
+        }
+
+        private double calculate(double number, Button button)
+        {
+            switch (operation)
+            {
+                case '+':
+                    total += number;
+                    break;
+                case '-':
+                    break;
+                case '*':
+                    break;
+                case '/':
+                    break;
+                case '²':
+                    break;
+                case 'V':
+                    break;
+                default:
+                    break;
+            }
+
+            return total;
         }
     }
 }
